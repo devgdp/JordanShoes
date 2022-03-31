@@ -1,0 +1,143 @@
+:root {
+  /* Colors */
+  --light: rgba(249, 249, 249, 1);
+  --light-200: rgba(235, 233, 234, 1);
+  --gray: rgba(71, 71, 71, 1);
+  --black-light: rgba(24, 24, 24, 1);
+
+  /* Typography */
+  font-size: 16px;
+  --font: 'Montserrat', sans-serif; /* FW 500 600 700 */
+
+  /* Layout */
+  --card: 12.188rem;
+  --padding: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: var(--font);
+  font-weight: 500;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.container {
+  padding-left: 6.25rem;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper__header {
+  width: 100%;
+}
+
+.wrapper__header span,
+.wrapper__header h1 {
+  height: 3.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__header span {
+  background-color: var(--black-light);
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light);
+}
+
+.wrapper__header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black-light);
+}
+
+.wrapper__hero {
+  width: 100%;
+  height: 23.75rem;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__hero::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('/assets/img/air-jordan.png');
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.wrapper__hero img,
+.wrapper__hero div {
+  position: absolute;
+}
+
+.wrapper__hero div {
+  max-width: 32rem;
+}
+.wrapper__hero h2,
+.wrapper__hero p {
+  color: var(--light);
+  margin: 1.125rem 0;
+}
+
+.wrapper__hero h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.wrapper__hero p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2.207rem;
+}
+
+.wrapper__content {
+  margin-top: 3.75rem;
+}
+
+.wrapper__content h1 {
+  text-align: center;
+  color: var(--black-light);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.wrapper__content p {
+  text-align: center;
+  color: var(--black-light);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2.207rem;
+}
+
+.wrapper__products {
+  margin-top: 3.75rem;
+}
+
+/* CARD USAR GRID MIN MAX REPEAT */
