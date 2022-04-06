@@ -180,4 +180,8 @@ img {
   .wrapper__content {
     padding: 0 1rem;
   }
+   
+
+ .wrapper__products { 
+   grid-template-columns: repeat (auto-fill, 1fr));
 }
