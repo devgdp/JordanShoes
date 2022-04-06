@@ -183,5 +183,5 @@ img {
    
 
  .wrapper__products { 
-   grid-template-columns: repeat (auto-fill, 1fr));
+   grid-template-columns: 1fr;
 }
