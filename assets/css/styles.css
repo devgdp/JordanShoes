@@ -10,8 +10,7 @@
   --font: 'Montserrat', sans-serif; /* FW 500 600 700 */
 
   /* Layout */
-  --card: 12.188rem;
-  --padding: ;
+  --card: 15rem;
 }
 
 * {
@@ -36,7 +35,7 @@ img {
 }
 
 .container {
-  padding-left: 6.25rem;
+  padding: 0 6.25rem;
 }
 .wrapper {
   width: 100%;
@@ -119,6 +118,8 @@ img {
 
 .wrapper__content {
   margin-top: 3.75rem;
+  width: 100%;
+  padding: var(--padding);
 }
 
 .wrapper__content h1 {
@@ -138,6 +139,45 @@ img {
 
 .wrapper__products {
   margin-top: 3.75rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card), 1fr));
+  gap: 1rem;
 }
 
-/* CARD USAR GRID MIN MAX REPEAT */
+.products__card {
+  height: var(--card);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-200);
+}
+
+.wrapper__footer {
+  height: 3.75rem;
+  width: 100%;
+  background-color: var(--black-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 6.25rem;
+}
+
+.wrapper__footer p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--light);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper__hero {
+    padding: 1rem;
+  }
+
+  .wrapper__content {
+    padding: 0 1rem;
+  }
+}
